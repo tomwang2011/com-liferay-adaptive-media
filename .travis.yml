@@ -26,5 +26,5 @@ script:
 
 after_success:
   - ./gradlew stopJacocoRecording
-  - sleep 20
+  - sleep 30
   - ./gradlew coveralls
