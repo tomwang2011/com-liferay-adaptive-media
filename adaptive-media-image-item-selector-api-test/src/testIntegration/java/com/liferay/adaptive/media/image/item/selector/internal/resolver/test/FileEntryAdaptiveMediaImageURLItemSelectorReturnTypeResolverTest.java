@@ -125,7 +125,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 	@Test
 	public void testAddingFileEntryWithHDMediaQueries() throws Exception {
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			_addTestVariant("small", "uuid0", 50, 50);
 			_addTestVariant("small.hd", "uuid1", 100, 100);
@@ -172,7 +172,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 	@Test
 	public void testAddingFileEntryWithImageCreatesMedia() throws Exception {
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			_addTestVariant("small", "uuid0", 50, 50);
 			_addTestVariant("big", "uuid1", 400, 280);
@@ -226,7 +226,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			ServiceContext serviceContext =
 				ServiceContextTestUtil.getServiceContext(
@@ -270,7 +270,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			_addTestVariant("small", "uuid0", 50, 50);
 			_addTestVariant("small.hd", "uuid1", 101, 100);
@@ -314,7 +314,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			_addTestVariant("small", "uuid0", 50, 50);
 			_addTestVariant("small.hd", "uuid1", 100, 99);
@@ -358,7 +358,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			ServiceContext serviceContext =
 				ServiceContextTestUtil.getServiceContext(
@@ -402,7 +402,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			ServiceContext serviceContext =
 				ServiceContextTestUtil.getServiceContext(
@@ -446,7 +446,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			ServiceContext serviceContext =
 				ServiceContextTestUtil.getServiceContext(
@@ -490,7 +490,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			_addTestVariant("small", "uuid0", 50, 50);
 			_addTestVariant("small.hd", "uuid1", 200, 98);
@@ -534,7 +534,7 @@ public class FileEntryAdaptiveMediaImageURLItemSelectorReturnTypeResolverTest {
 		throws Exception {
 
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			_addTestVariant("small", "uuid0", 50, 50);
 			_addTestVariant("small.hd", "uuid1", 200, 102);

@@ -205,7 +205,7 @@ public class AdaptiveMediaImageDeleteConfigurationTest
 	@Test
 	public void testDeleteConfigurationEntryWithImages() throws Exception {
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			AdaptiveMediaImageConfigurationHelper
 				adaptiveMediaImageConfigurationHelper =
@@ -610,7 +610,7 @@ public class AdaptiveMediaImageDeleteConfigurationTest
 	@Test
 	public void testForceDeleteConfigurationEntryWithImages() throws Exception {
 		try (DestinationReplacer destinationReplacer = new DestinationReplacer(
-				"liferay/adaptive_media_processor")) {
+				AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR)) {
 
 			AdaptiveMediaImageConfigurationHelper
 				adaptiveMediaImageConfigurationHelper =
