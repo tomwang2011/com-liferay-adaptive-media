@@ -14,6 +14,7 @@
 
 package com.liferay.adaptive.media.image.item.selector.internal.resolver.test;
 
+import com.liferay.adaptive.media.internal.messaging.AdaptiveMediaDestinationNames;
 import com.liferay.arquillian.extension.junit.bridge.junit.Arquillian;
 import com.liferay.document.library.kernel.model.DLFolderConstants;
 import com.liferay.document.library.kernel.service.DLAppLocalService;
@@ -57,7 +58,9 @@ import org.junit.runner.RunWith;
  * @author Alejandro Tardín
  */
 @RunWith(Arquillian.class)
-@Sync
+@Sync(
+	destinationNames = {AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR}
+)
 public class
 	FileEntryAdaptiveMediaImageFileEntryItemSelectorReturnTypeResolverTest {
 

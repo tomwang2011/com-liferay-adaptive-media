@@ -20,6 +20,7 @@ import com.liferay.adaptive.media.image.configuration.AdaptiveMediaImageConfigur
 import com.liferay.adaptive.media.image.finder.AdaptiveMediaImageFinder;
 import com.liferay.adaptive.media.image.processor.AdaptiveMediaImageProcessor;
 import com.liferay.adaptive.media.image.test.util.DestinationReplacer;
+import com.liferay.adaptive.media.internal.messaging.AdaptiveMediaDestinationNames;
 import com.liferay.arquillian.extension.junit.bridge.junit.Arquillian;
 import com.liferay.document.library.kernel.model.DLFolderConstants;
 import com.liferay.document.library.kernel.service.DLAppLocalService;
@@ -59,7 +60,9 @@ import org.junit.runner.RunWith;
  * @author Adolfo Pérez
  */
 @RunWith(Arquillian.class)
-@Sync
+@Sync(
+	destinationNames = {AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR}
+)
 public class AdaptiveMediaImageProcessorTest {
 
 	@ClassRule

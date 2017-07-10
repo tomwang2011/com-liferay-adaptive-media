@@ -21,6 +21,7 @@ import com.liferay.adaptive.media.image.configuration.AdaptiveMediaImageConfigur
 import com.liferay.adaptive.media.image.finder.AdaptiveMediaImageFinder;
 import com.liferay.adaptive.media.image.processor.AdaptiveMediaImageProcessor;
 import com.liferay.adaptive.media.image.service.AdaptiveMediaImageEntryLocalServiceUtil;
+import com.liferay.adaptive.media.internal.messaging.AdaptiveMediaDestinationNames;
 import com.liferay.arquillian.extension.junit.bridge.junit.Arquillian;
 import com.liferay.document.library.kernel.model.DLFolderConstants;
 import com.liferay.document.library.kernel.service.DLAppLocalServiceUtil;
@@ -84,7 +85,9 @@ import org.osgi.util.promise.Promise;
  * @author Adolfo Pérez
  */
 @RunWith(Arquillian.class)
-@Sync
+@Sync(
+	destinationNames = {AdaptiveMediaDestinationNames.ADAPTIVE_MEDIA_PROCESSOR}
+)
 public class AdaptiveMediaThumbnailsOSGiCommandsTest {
 
 	@ClassRule
